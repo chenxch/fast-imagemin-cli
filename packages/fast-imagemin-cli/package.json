@@ -1,7 +1,7 @@
 {
   "name": "fast-imagemin-cli",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A tool for fast secondary compression of images.",
   "author": "Xc",
   "license": "MIT",
