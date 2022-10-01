@@ -1,5 +1,5 @@
 <p align='center'>
-<img src="https://cdn.staticaly.com/gh/chenxch/pic-image@master/20221001/image-1.1meinoimprwg.webp" />
+<img src="https://cdn.staticaly.com/gh/chenxch/pic-image@master/20221001/Group-1.4tovhdat6w40.webp" />
 </p>
 # fast-imagemin-cli
 <p align='center'>
