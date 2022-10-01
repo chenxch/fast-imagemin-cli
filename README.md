@@ -111,6 +111,7 @@ export default defineFmConfig({
 
 ## Demo
 `packages/playground`
+[xlegex](https://github.com/chenxch/xlegex)
 ### first
 <img src="https://cdn.staticaly.com/gh/chenxch/pic-image@master/20221001/image.5e3wp5v8xdg0.webp" />
 
