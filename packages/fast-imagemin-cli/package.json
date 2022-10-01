@@ -2,7 +2,7 @@
   "name": "fast-imagemin-cli",
   "private": true,
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "A tool for fast secondary compression of images.",
   "author": "Xc",
   "license": "MIT",
@@ -47,7 +47,8 @@
   ],
   "scripts": {
     "dev": "tsc -w --incremental",
-    "build": "rm -rf dist && tsc"
+    "build": "rm -rf dist && tsc",
+    "release": "bumpp --commit --push --tag && pnpm publish"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.27.0",
