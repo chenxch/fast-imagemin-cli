@@ -1,0 +1,78 @@
+{
+  "name": "fast-imagemin-cli",
+  "private": true,
+  "type": "module",
+  "version": "0.0.1",
+  "description": "A tool for fast secondary compression of images.",
+  "author": "Xc",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/chenxch",
+  "homepage": "https://github.com/chenxch/fast-imagemin-cli#readme",
+  "repository": "https://github.com/chenxch/fast-imagemin-cli",
+  "bugs": "https://github.com/chenxch/fast-imagemin-cli/issues",
+  "keywords": [
+    "imagemin",
+    "cli",
+    "fast",
+    "compress"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.js"
+    },
+    "./support": {
+      "types": "./dist/support.d.ts",
+      "require": "./dist/support.js",
+      "import": "./dist/support.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "bin": {
+    "fm": "bin/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsc -w --incremental",
+    "build": "rm -rf dist && tsc"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.27.0",
+    "bumpp": "^8.2.1",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "@types/imagemin": "^7.0.1",
+    "@types/imagemin-gifsicle": "^7.0.1",
+    "@types/imagemin-jpegtran": "^5.0.1",
+    "@types/imagemin-mozjpeg": "^8.0.1",
+    "@types/imagemin-optipng": "^5.2.1",
+    "@types/imagemin-svgo": "^10.0.0",
+    "@types/imagemin-webp": "^7.0.0",
+    "chalk": "^5.0.1",
+    "commander": "^9.4.1",
+    "imagemin": "^8.0.1",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-svgo": "^10.0.1",
+    "imagemin-webp": "^7.0.0",
+    "ora": "^6.1.2",
+    "unconfig": "^0.3.6"
+  }
+}
