@@ -58,6 +58,9 @@ async function processFile(plugins: imagemin.Plugin[], filePath: string, buffer:
 }
 
 export async function compress(config: FmConfig, force = false) {
+  if (force)
+    oldTinyMap.clear()
+
   const { include, options } = config
   const includeArr = Array.isArray(include) ? include : [include]
   const filePaths: string[] = []
