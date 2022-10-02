@@ -46,6 +46,23 @@ npm install vite-plugin-imagemin -D
 yarn add vite-plugin-imagemin -D
 ```
 
+### China installation note
+(The scheme is extracted to [vite-plugin-imagemin](https://github.com/vbenjs/vite-plugin-imagemin/blob/main/README.md#china-installation-note))
+
+Because imagemin is not easy to install in China. Several solutions are now available
+
+1. Use yarn to configure in package.json (recommended)
+```
+"resolutions": {
+    "bin-wrapper": "npm:bin-wrapper-china"
+  },
+```
+2. Use npm, add the following configuration to the computer host file
+```
+199.232.4.133 raw.githubusercontent.com
+```
+3. Install with cnpm (not recommended)
+
 ## Config
 `fm.config.ts` or `fm.config.json`
 - inclde(required): The image directory that needs to be compressed will be automatically traversed recursively.
