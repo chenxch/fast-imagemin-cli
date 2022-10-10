@@ -64,7 +64,9 @@ export async function compress(config: FmConfig, force = false) {
   const { include, options } = config
   const includeArr = Array.isArray(include) ? include : [include]
   const filePaths: string[] = []
+  debug(process.cwd())
   includeArr.forEach((targetDir) => {
+    debug(targetDir)
     const currentDirPath = path.resolve(process.cwd(), targetDir)
     walkSync(currentDirPath, (filePath: string, dirent: fs.Dirent) => {
       if (isImageExp(dirent.name)) {

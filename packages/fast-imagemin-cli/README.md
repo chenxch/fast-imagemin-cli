@@ -37,13 +37,13 @@ so, a compression tool that can be locally unlimited and can avoid duplication o
 ## Install
 ```shell
 # pnpm
-pnpm install vite-plugin-imagemin -D
+pnpm install fast-imagemin-cli -D
 
 # npm
-npm install vite-plugin-imagemin -D
+npm install fast-imagemin-cli -D
 
 # yarn
-yarn add vite-plugin-imagemin -D
+yarn add fast-imagemin-cli -D
 ```
 
 ### China installation note
