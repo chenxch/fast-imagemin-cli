@@ -11,6 +11,7 @@ type EnabledOptions<T> = T | false
 export interface FmConfig {
   include: string | string[],
   options?: ImageMinOptions,
+  backup?: boolean,
 }
 
 export interface ImageMinOptions {

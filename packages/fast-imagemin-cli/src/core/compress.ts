@@ -83,6 +83,15 @@ export async function compress(config: FmConfig, force = false) {
       debug(chalk.redBright('Please configure at least one compression configuration parameter.'))
       return
     }
+    if (config.backup) {
+      filePaths.forEach((filePath) => {
+        const backupPath = path.resolve(__dirname, path.relative(process.cwd(), filePath))
+        if (!fs.existsSync(backupPath))
+          fs.mkdirSync(backupPath)
+        // fs.copyFileSync(filePath, backupPath)
+        console.log(filePath, backupPath)
+      })
+    }
     const tasks = filePaths.map(filePath => Promise.resolve(processFile(plugins!, filePath, fs.readFileSync(filePath))))
     const spinner = ora({ text: chalk.bold.yellow('compressing...'), color: 'yellow' }).start()
 
