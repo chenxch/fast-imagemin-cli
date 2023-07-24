@@ -52,6 +52,5 @@ export function getHash(content: any, encoding: Encoding, type: string) {
  */
 export function getHashOfFile(filePath: string) {
   return getHash(fs.readFileSync(filePath, 'utf8'), 'utf8', 'md5')
-  // return getHash(path.relative(process.cwd(), filePath), 'utf8', 'md5')
 }
 

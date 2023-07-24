@@ -74,6 +74,7 @@ import { defineFmConfig } from 'fast-imagemin-cli/support'
 
 export default defineFmConfig({
   include: ['./src/assets'], // string | string[]
+  backup: false, // backup origin image  verison 0.1.0
   options: {
     gifsicle: {
       optimizationLevel: 7,
