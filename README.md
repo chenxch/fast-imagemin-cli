@@ -46,6 +46,12 @@ npm install fast-imagemin-cli -D
 yarn add fast-imagemin-cli -D
 ```
 
+## CHANGELOGS
+
+### 0.1.0
+
+- Feat⭐: Added the function of backing up the original image
+
 ### China installation note
 (The scheme is extracted to [vite-plugin-imagemin](https://github.com/vbenjs/vite-plugin-imagemin/blob/main/README.md#china-installation-note))
 
